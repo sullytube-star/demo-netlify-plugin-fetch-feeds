@@ -15,5 +15,9 @@
   "dependencies": {
     "@11ty/eleventy": "^0.10.0",
     "netlify-plugin-fetch-feeds": "^0.2.2"
+  },
+  "overrides": {
+    "node-expat": "^2.4.1",
+    "nan": "^2.22.0"
   }
 }
