@@ -11,11 +11,10 @@
     dataDir = "src/_data"
 
     # All the feeds we wish to gather for use in the build
-    [[plugins.inputs.feeds]]
-      name = "hawksworx"
-      url = "https://hawksworx.com/feed.json"
-      ttl = 120   # Cache for 2 minutes
+    # The hawksworx feed (https://hawksworx.com/feed.json) is no longer fetched:
+    # the site now sits behind a bot challenge that returns HTML instead of JSON,
+    # which breaks the build. The committed snapshot in src/_data/hawksworx.json is used instead.
     [[plugins.inputs.feeds]]
       name = "netlify"
-      url = "https://www.netlify.com/blog/index.xml"
+      url = "https://www.netlify.com/rss.xml"
       ttl = 86400   # Cache for 24 hours
